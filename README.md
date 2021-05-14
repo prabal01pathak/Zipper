@@ -6,5 +6,5 @@ gui== graphZip
 cli==zipfile
 & 
 Excutable Files :
-exe ==> gui --> graphZip
+exe ==> gui --> graphZip &
         cli -->zipfile1
