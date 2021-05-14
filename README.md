@@ -1,2 +1,2 @@
-# Zip-Csv.
-This is Terminal App for extracting Zip and reading CSv.
+# Zipper 
+This is Terminal App for extracting one or all files from zip.
