@@ -5,13 +5,14 @@ import os
 import time
 import subprocess
 
+__all__=['zip_read','zip_extract_one','zip_extract_all',]
 BASE_DIR = os.path.expanduser('~')
 
 
 
 ### For Extracting zip File in user defined path 
 
-def zip_file():
+def zip_read():
 
     ''' this method will 
     extract zip file'''
@@ -37,7 +38,7 @@ def zip_file():
         print(e)
         user = input('Would you like to try again(y/n): ')
         if user.lower()=='y':
-            zip_file()
+            zip_read()
         else:
             print('ok')
             time.sleep(2)
@@ -90,9 +91,8 @@ def user_chance(zip,x):
         time.sleep(2)
         sys.exit()
 
-    
 
-### This is for decleartion of file type
+
 
 if __name__ == "__main__":
-    zip_file()
+    zip_read()
