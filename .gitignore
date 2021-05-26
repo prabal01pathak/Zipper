@@ -52,6 +52,10 @@ coverage.xml
 .pytest_cache/
 directory.py
 second.zip
+newx.py
+*~
+*swp
+DockerFile
 # Translations
 *.mo
 *.pot
