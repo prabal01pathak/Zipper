@@ -55,7 +55,7 @@ second.zip
 newx.py
 *~
 *swp
-DockerFile
+Dockerfile
 # Translations
 *.mo
 *.pot
