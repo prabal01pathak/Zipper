@@ -52,6 +52,8 @@ coverage.xml
 .pytest_cache/
 directory.py
 second.zip
+'
+*.swo
 newx.py
 .gitignore~
 *.py~
