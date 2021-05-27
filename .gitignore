@@ -60,7 +60,6 @@ newx.py
 *.un~
 *.swp
 Dockerfile
-# Translations
 *.mo
 *.pot
 
