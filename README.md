@@ -1,8 +1,15 @@
-**Zipper** 
+**Zipper**
+
 >This is Terminal App for extracting one or all files from zip.
+
 >This contain both cli and gui app.
 
-|Gui        | Cli       | 
+-----
+
+
+
+
+|**Gui**        | **Cli**       | 
 |-----------|-----------|
 |graphZip.py| zipfile.py|
 
@@ -10,6 +17,6 @@
 **Excutable Files**
 	 
 
-|gui         | cli             | 
+|**Gui**         | **Cli**              | 
 |------------|-----------------|
 |graphZip.exe| zipfile1.exe    | 
