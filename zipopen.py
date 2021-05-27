@@ -17,18 +17,18 @@ class Application(tk.Frame):
         self.quit = tk.Button(self,text = 'QUIT',fg = 'red',command = self.master.destroy)
         self.quit.pack(side='bottom')
     def open_zip(self):
-        self.files =filedialog.askopenfilenames()
-        fileName = StringVar()
-        self.name = tk.Entry(root,width = 8,textvariable=self.files)
-        self.fill = tk.Label(root,textvariable = self.files)
-        self.name.pack(side = 'top')
-        print(self.files)
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    root.columnconfigure(0,weight=1)
-    root.rowconfigure(0,weight=1)
-    root.title('ZIPPER')
+        self.fill = tk.Label(root,text = f'File Name --> {self.files}\n',fg = 'green',bg = 'white')
+        self.fill.pack(side = 'left')
+        fileName.set(self.files)
+        self.fill = tk.Label(root,textvariable = fileName)
+        print(self.fill)
+                count = 0
+                print(l)
+                for i in range(len(l:
+                    print(i)
+                    self.label = Label(root,text = f'Files are {l[count].filename}\n',fg = 'blue',bg = 'white')
+                self.label.pack(side = 'left')
+                count +=1
     app = Application(master = root)
     app.mainloop()  
 

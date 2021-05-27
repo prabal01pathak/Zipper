@@ -1,4 +1,5 @@
-import tkinter as Tk
+import tkinter as tk
+from tkinter import *
 from tkinter import filedialog
 from zipfile import ZipFile
 import inspect
@@ -15,14 +16,10 @@ def zip_file():
 
     ''' this method will 
     extract zip file'''
-
-    # Taking user input path
-    print('Please select zip file')
-    print('look around')
-    directory = filedialog.askopenfile(filetypes=[('zip {.zip}')])
+    directory = filedialog.askopenfilename(filetypes = [('zip {.zip}')])
+    print(directory)
     try:
-        file_zip = directory.name 
-        with ZipFile(file_zip,'r') as zip:
+        with ZipFile(directory,'r') as zip:
             print(zip.printdir())
             user_op = input('Do you want to extract all or any file(all/1/n):')
 
@@ -147,6 +144,6 @@ def user_input():
 
 if __name__ == "__main__":
     a = print('proceeding..')
-    root = Tk.Tk()
+    root = Tk()
     root.withdraw()
     user_input()
