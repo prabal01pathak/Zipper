@@ -53,8 +53,10 @@ coverage.xml
 directory.py
 second.zip
 newx.py
-*~
-*swp
+.gitignore~
+*.py~
+*.un~
+*.swp
 Dockerfile
 # Translations
 *.mo
