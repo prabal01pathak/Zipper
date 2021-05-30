@@ -1,4 +1,5 @@
 def main():
-    print('merge conflicts'
+    print('merge conflicts')
+    print('new conflict')
 
 main()
