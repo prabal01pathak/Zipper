@@ -4,11 +4,10 @@ godot2.png
 new.html
 new2.html
 new.md
+new.py
 __pycache__/
 *.py[cod]
 *$py.class
-
-new.py
 
 # C extensions
 *.so
