@@ -1,13 +1,10 @@
 # Byte-compiled / optimized / DLL files
 assets
 godot2.png
-new.html
-new2.html
-new.py
+new.md
 __pycache__/
 *.py[cod]
 *$py.class
-new.md
 
 # C extensions
 *.so
