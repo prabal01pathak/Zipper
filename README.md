@@ -9,10 +9,10 @@
 
 
 
-### Requirements 
+## Requirements 
     Python ==>3.8
     and some knowladge of python built in modules.
-#### Modules  
+### Modules  
 > **os** ,
 > **zipfile** ,
 > **tkinter**  ,
@@ -21,13 +21,13 @@
 ****
 
 
-### Files
+## Files
 >|**Gui**        | **Cli**       | 
 >|-----------|-----------|
 >|graphZip.py| zipfile.py|
 
 ****
-### **Excutable Files**
+## **Excutable Files**
 >   |**Gui**         | **Cli**              | 
 >   |------------|-----------------|
 >  |graphZip.exe| zipfile1.exe    | 
@@ -45,8 +45,6 @@
 # Project Status 
      Project is in devolopment stage. 
      If you have any idea then you can share.
-
-!prabal!
 
                                                    
 
