@@ -2,7 +2,6 @@
 # ***this*** is practice Mark.
 ****
 
->for spending time.
 
 | Name | Email | Work|
 |------|-------|-----|
