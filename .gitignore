@@ -3,11 +3,11 @@ assets
 godot2.png
 new.html
 new2.html
-new.md
 new.py
 __pycache__/
 *.py[cod]
 *$py.class
+new.md
 
 # C extensions
 *.so
