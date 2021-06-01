@@ -1,7 +1,6 @@
 # Byte-compiled / optimized / DLL files
 assets
 godot2.png
-new.md
 __pycache__/
 *.py[cod]
 *$py.class
