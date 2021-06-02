@@ -56,12 +56,6 @@ directory.py
 second.zip
 '
 *.swo
-newx.py
-.gitignore~
-*.py~
-*.un~
-*.swp
-Dockerfile
 *.mo
 *.pot
 
