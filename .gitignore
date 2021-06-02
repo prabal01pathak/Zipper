@@ -3,7 +3,7 @@ assets
 godot2.png
 __pycache__/
 *.py[cod]
-*$py.class
+*py.class
 
 # C extensions
 *.so
@@ -52,16 +52,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-directory.py
-second.zip
-'
 *.swo
-newx.py
-.gitignore~
-*.py~
-*.un~
-*.swp
-Dockerfile
 *.mo
 *.pot
 
