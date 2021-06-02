@@ -52,10 +52,6 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-directory.py
-second.zip
-'
-*.swo
 *.mo
 *.pot
 
