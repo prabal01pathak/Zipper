@@ -5,6 +5,8 @@ from tkinter import *
 import tkinter as tk
 import time
 import os
+import sys
+from datetime import datetime
 
 #This is main class for handling frame and widgets.
 
