@@ -23,8 +23,16 @@ class Application(tk.Frame):
         self.ask_file.pack()
         self.quit = tk.Button(self,text = 'QUIT',fg = 'red',command = self.master.destroy) #exit from application.
         self.quit.pack()
+        self.show_time = Label(self,fg = 'red')
+        self.digital_clock()
+        self.show_time.pack()
 
     #For selecting zip file.
+    def digital_clock(self):
+        times = time.strftime('%H:%M:%S')
+        date = datetime.now().date()
+        self.show_time.config(text =f'Date : {date} \n Time: {times}')
+        self.show_time.after(200,self.digital_clock)
 
     def ask_zip(self):
         files = filedialog.askopenfilename(filetypes =[('zip {.zip}')]) #dialog only zip files.
