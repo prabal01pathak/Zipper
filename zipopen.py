@@ -8,6 +8,10 @@ import time
 import os
 import sys
 from datetime import datetime
+import shutil
+from tarfile import TarFile
+from pathlib import Path 
+import glob
 
 #This is main class for handling frame and widgets.
 
@@ -20,7 +24,11 @@ class Application(ttk.Frame):
 
 #widgets for selecting file and processing .
     def creat_widgets(self):
-        self.ask_file = tk.Button(self,text = 'SELECT',fg = 'blue',command = self.ask_zip) # Ask for zip file.
+        self.make_archive = Button(self,text = 'MAKE',fg ='pink',command = self.make_archive)
+        self.make_archive.pack(side = LEFT,expand = False)
+        self.for_tar = Button(self,text = 'TAR',fg = 'green',command = self.ask_tarfile)
+        self.for_tar.pack(side = LEFT , expand = False)
+        self.ask_file = tk.Button(self,text = 'ZIP',fg = 'blue',command = self.ask_zip) # Ask for zip file.
         self.ask_file.pack(side = LEFT , expand =1,padx = 5 ,pady = 4)
         self.quit = tk.Button(self,text = 'QUIT',fg = 'red',command = self.master.destroy) #exit from application.
         self.quit.pack(side = LEFT , expand = 1,padx = 5 ,pady = 4)
@@ -107,7 +115,26 @@ class Application(ttk.Frame):
             l =  lists
             for i in l:
                 i.destroy()
-     
+    def ask_tarfile(self):
+        global asked_file
+        asked_file = str(filedialog.askopenfilename())
+        with TarFile(asked_file,'r') as tar:
+            member = tar.getmembers()
+            for i in range(len(member)):
+                label_member = Label(root,text = f'{i +1}. {member[i].name}')
+                label_member.pack()
+            extract = Button(root,text = 'Extract',command = self.open_tar)
+            extract.pack()
+    def open_tar(self):
+        with TarFile(asked_file , 'r') as tar:
+            extract_folder = filedialog.askdirectory()
+            tar.extractall(path = extract_folder)
+            os.startfile(extract_folder)
+    def make_archive(self):
+        ask_folder = str(filedialog.askdirectory())
+        print(ask_folder)
+        
+
 #    self.master.destroy()
 #    root = Tk()
 #    Application(master = root)
