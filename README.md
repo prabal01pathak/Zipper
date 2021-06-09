@@ -1,11 +1,18 @@
 # **Zipper**
-//for unzipping zip archive.
+**To create and extract archive of different extensions.**
+
+>>as .tar,.zip etc.
 
 # Description
+	application contains three different user interfaces 
+    for extracting archive of different formats.
+    
+	1. command line   >> zipfile1.py
+	2. command line + graphical >> graphZip.py
+	3. graphcial >> zipopen.py
 
-	This is Terminal App for extracting one or all files from zip.
+    Application has method to make folder archive.
 
-	This contain both cli and gui app.
 
 
 
@@ -16,7 +23,9 @@
 > **os** ,
 > **zipfile** ,
 > **tkinter**  ,
-> **pathlib**  
+> **pathlib**  ,
+>**shutil** 
+>**etc.** 
 
 ****
 
@@ -24,13 +33,13 @@
 ## Files
 >|**Gui**        | **Cli**       | 
 >|-----------|-----------|
->|graphZip.py| zipfile.py|
+>|zipopen.py| zipfile.py|
 
 ****
 ## **Excutable Files**
 >   |**Gui**         | **Cli**              | 
 >   |------------|-----------------|
->  |graphZip.exe| zipfile1.exe    | 
+>  |zipopen.exe| zipfile1.exe    | 
 
 # Contributing
     Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -44,7 +53,7 @@
 
 # Project Status 
      Project is in devolopment stage. 
-     If you have any idea then you can share.
+     If you have any idea then please pull request.
 
                                                    
 
