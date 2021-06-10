@@ -1,6 +1,5 @@
 # **Zipper**
 **To create and extract archive of different extensions.**
-
 >>as .tar,.zip etc.
 
 # Description
@@ -53,7 +52,7 @@
 
 # Project Status 
      Project is in devolopment stage. 
-     If you have any idea then please pull request.
+     If you have any idea then please make pull request.
 
                                                    
 
