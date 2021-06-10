@@ -1,7 +1,7 @@
 # **Zipper**
 **To create and extract archive of different extensions.**
 
->>as .tar,.zip etc.
+>as .tar,.zip etc.
 
 # Description
 	application contains three different user interfaces 
