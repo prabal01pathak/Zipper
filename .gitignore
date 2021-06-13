@@ -1,9 +1,7 @@
 # Byte-compiled / optimized / DLL files
-assets
-godot2.png
 __pycache__/
 *.py[cod]
-*py.class
+*$py.class
 
 # C extensions
 *.so
@@ -28,7 +26,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-this.tar
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -53,7 +50,8 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-*.swo
+
+# Translations
 *.mo
 *.pot
 

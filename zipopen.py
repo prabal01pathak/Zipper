@@ -114,36 +114,55 @@ class Application(ttk.Frame):
             for i in l:
                 i.destroy()
     def ask_tarfile(self):
-        global asked_file
+        global asked_file,lists
+        lists= []
         asked_file = str(filedialog.askopenfilename())
+        label_name = Label(root,text = 'Select file ==>')
+        lists.append(label_name)
+        label_name.grid(row = 1,column = 0)
+        strings = StringVar()
+        strings.set(asked_file)
+        label_file = Entry(root,textvariable = strings)
+        lists.append(label_file)
+        label_file.grid(row=1,column = 1)
         with TarFile(asked_file,'r') as tar:
             member = tar.getmembers()
             for i in range(len(member)):
                 label_member = Label(root,text = f'{i +1}. {member[i].name}')
-                label_member.grid(row = 1,column = 1)
+                label_member.grid(row = i+2,column = 1)
+                lists.append(label_member)
             extract = Button(root,text = 'Extract',command = self.open_tar)
+            lists.append(extract)
             extract.grid(row = 1, column = 2)
+            refresh_button = Button(root,text = 'REFRESH',command = self.refresh)
+            lists.append(refresh_button)
+            refresh_button.grid(row =1 , column = 3)
     def open_tar(self):
         with TarFile(asked_file , 'r') as tar:
             extract_folder = filedialog.askdirectory()
             tar.extractall(path = extract_folder)
             os.startfile(extract_folder)
     def make_archive(self):
-        global listbox ,ask_folder,folder_name
-
-        yscrollbar = Scrollbar(root)
-        yscrollbar.grid(row=1,column =2 )
-        listbox = Listbox(root,selectmode = 'single',yscrollcommand = yscrollbar.set)
+        global listbox ,ask_folder,folder_name,lists
+        lists = []
+        listbox = Listbox(root,selectmode = 'single')
+        lists.append(listbox)
         listbox.grid(row = 1,column=1)
         ask_folder = str(filedialog.askdirectory())
         string = StringVar()
+        string.set(ask_folder)
         formats = shutil.get_archive_formats()
         for i in range(len(formats)):
             listbox.insert(END,formats[i][0])
         folder_name = Entry(root,textvariable = string)
+        lists.append(folder_name)
         folder_name.grid(row = 2,column = 2)
         make_button = Button(root,text = 'FINAL',command = self.final_archive)
+        lists.append(make_button)
         make_button.grid(row = 1 ,column = 3)
+        refresh_button= Button(root,text = 'REFRESH',command = self.refresh)
+        lists.append(refresh_button)
+        refresh_button.grid(row=1 ,column = 4)
 
         
     def final_archive(self):
