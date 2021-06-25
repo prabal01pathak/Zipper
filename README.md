@@ -53,7 +53,6 @@
 
 # Project Status 
      Project is in devolopment stage. 
-     If you have any idea then please pull request.
 
                                                    
 
