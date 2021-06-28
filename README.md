@@ -5,8 +5,11 @@ as .tar,.zip etc.
 # Description
 Application contains three different user interfaces 
 for extracting archive of different formats.
+
 zipfile1.py is command line extracter.
+
 graphZip.py has initial command line and graphical for selecting files.
+
 zipopen.py is fully graphical implemented with tkinter to extract and make archive.
 
 
