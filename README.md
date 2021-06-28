@@ -4,14 +4,14 @@
 >as .tar,.zip etc.
 
 # Description
-	application contains three different user interfaces 
-    for extracting archive of different formats.
-    
-	1. command line   >> zipfile1.py
-	2. command line + graphical >> graphZip.py
-	3. graphcial >> zipopen.py
+application contains three different user interfaces 
+for extracting archive of different formats.
 
-    Application has method to make folder archive.
+1. command line   >> zipfile1.py
+2. command line + graphical >> graphZip.py
+3. graphcial >> zipopen.py
+
+Application has method to make folder archive.
 
 
 
@@ -42,9 +42,9 @@
 >  |zipopen.exe| zipfile1.exe    | 
 
 # Contributing
-    Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-    Please make sure to update tests as appropriate.
+Please make sure to update tests as appropriate.
 
 
 # License
@@ -52,7 +52,7 @@
 **[MIT](https://choosealicense.com/licenses/mit/)**
 
 # Project Status 
-     Project is in devolopment stage. 
+Project is in devolopment stage. 
 
                                                    
 
