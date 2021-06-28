@@ -17,8 +17,8 @@ Application has method to make folder archive.
 
 
 ## Requirements 
-    Python ==>3.8
-    and some knowladge of python built in modules.
+Python ==>3.8
+and some knowladge of python built in modules.
 ### Modules  
 > **os** ,
 > **zipfile** ,
