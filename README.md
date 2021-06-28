@@ -1,10 +1,9 @@
 # **Zipper**
 **To create and extract archive of different extensions.**
-
->as .tar,.zip etc.
+as .tar,.zip etc.
 
 # Description
-application contains three different user interfaces 
+Application contains three different user interfaces 
 for extracting archive of different formats.
 zipfile1.py is command line extracter.
 graphZip.py has initial command line and graphical for selecting files.
@@ -13,12 +12,6 @@ zipopen.py is fully graphical implemented with tkinter to extract and make archi
 
 ## Requirements 
 **Python 3.6**
-### Modules  
-**os** ,
-**zipfile** ,
-**tkinter**  ,
-**pathlib**  ,
-**shutil** 
 
 # Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
